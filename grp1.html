@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Rappeurs et police</title>
+  <meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no;user-scalable=0;"/>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/wordcloud.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+</head>
+<body>
+ 
+      <nav class="navbar navbar-dark bg-dark" id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="grp2.html">Groupe 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="grp3.html">Groupe 3</a>
+            </li>
+          </ul>
+        </nav>
+
+
+<header class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">Rap et police</h1>
+    <p class="lead text-muted jumbotron-subheading">Un histoire de tensions</p>
+  </div>
+</header>
+<section class="container" id="intro">
+  <div class="row justify-content-md-center textintro">
+      <div class="lead col-10 text-muted">
+        <p><i>« Grosse vente de cannabis, on connaît les risques »</i>. Mi-juin 2018, il y a cinq mois, le très polémique clip du rappeur marseillais Elams est retiré de Youtube. Plusieurs personnalités politiques dénoncent alors des paroles incitant au meurtre et faisant l’apologie du trafic de stupéfiants. Le syndicat <a href="http://www.lefigaro.fr/musique/2018/06/29/03006-20180629ARTFIG00137-le-rappeur-marseillais-elams-met-en-scene-dans-son-clip-un-enfant-avec-une-arme-a-feu.php">France Police, proche de l’extrême-droite</a>, annonce porter plainte : <i>« Le chanteur fait l’apologie des gangs et du narcotrafic de la cité phocéenne et puis il y a ces propos qui visent plus particulièrement notre institution, en l’espèce Fuck la police »</i>, explique alors Michel Thooris, secrétaire général de ce syndicat. </p>
+      </div>
+  </div>
+  <div class="row justify-content-md-center textintro">
+    <div class="lead col-10 text-muted">
+      <p>S’interroger sur les rapports entre rap et police évoque spontanément ce genre de tensions. On pense par exemple au <a href="https://www.lesinrocks.com/2017/04/07/actualite/qui-est-jo-le-pheno-le-rappeur-poursuivi-par-le-ministere-de-linterieur-11931034/">rappeur Jo Le Phéno</a>, condamné l’année dernière à une amende  pour son titre <i>« Bavure »</i>, accusé de propager <i>« la haine anti-flic »</i> . Il y chantait notamment <i>« J'pisse sur la justice et sur la mère du commissaire »</i> ou <i>« Sans hésiter faut les fumer »</i>. Ou - aux débuts du rap en France - à NTM et son célèbre <i>« nique la police »</i>.</p>
+    </div>
+     <div class="lead col-10 text-muted">
+      <p>Mais quelle place la police prend-elle vraiment dans le rap francophone ? A-t-elle évolué au cours des années ? La réponse est oui : notre algorithme a passé au crible un ensemble de 8.486 chansons de rappeurs francophones datées de 1990 à nos jours. Sur ce corpus, 2.275 d’entre elles faisaient au moins une référence aux forces de l’ordre, parmi une liste de 33 mots et expressions comme <i>« flic »</i>, <i>« police »</i>, ou encore <i>« keuf »</i>. Au total, 26,3% des chansons contiennent donc au moins une référence à la police.
+      </p>
+    </div>
+</div> 
+  <div class="row justify-content-md-center ">
+      <div class="jumbotron words col-lg-10 col-sm-10">
+          <h1 class="lead text-muted jumbotron-subheading">Bases de mots faisant référence à la police</h1>
+          <select class="" name="selectword" id="selectword">
+            <option value="flic">flic</option>
+            <option value="keuf">keuf</option>
+            <option value="police">police</option>
+            <option value="condé">condé</option>
+            <option value="BAC">BAC</option>
+            <option value="stup">stup</option>
+            <option value="poulet">poulets</option>
+            <option value="shtar">shtar</option>
+            <option value="commissaire">commissaire</option>
+            <option value="chtar">chtar</option>
+            <option value="brb">brb</option>
+            <option value="popo">popo</option>
+            <option value="policier">policier</option>
+            <option value="képi">képi</option>
+            <option value="BRI">BRI</option> 
+            <option value="OPJ">OPJ</option>
+            <option value="schmitt">schmitt</option>
+            <option value="flicaille">flicaille</option>
+            <option value="kisdé">kisdé</option>
+            <option value="PJ">PJ</option>
+            <option value="ripou">ripou</option>
+            <option value="lice-po">lice-po</option>
+            <option value="la crim">la crim</option>
+            <option value="déki">déki</option>
+            <option value="lardu">lardu</option>
+            <option value="sergent">sergent</option>
+            <option value="dek">dek</option>
+            <option value="barbouze">barbouze</option>
+            <option value="feukeu">feukeu</option>
+            <option value="ke-fli">ke-fli</option>
+            <option value="perdreaux">perdreaux</option>
+          </select>
+          <div id="exampleinbase">
+              <p id="phrase-exampleinbase">
+
+              </p>
+              <p id="author-exampleinbase">
+
+              </p>
+
+          </div>
+
+      </div>
+    </div>
+</section>
+
+<section class="container" id="fallref">
+    <div class="row justify-content-md-center textintro">
+        <div class="lead col-10 text-muted">
+          <p>Et ce que l’on constate, c’est que le pourcentage moyen de chansons concernées a varié au cours des années. En 2006, il atteint 35,23% des chansons. C’est l’année qui suit la mort de <a href="https://www.lemonde.fr/a-la-une/article/2005/12/07/le-dernier-jour-de-bouna-traore-et-zyed-benna_718481_3208.html">Zyed et Bouna</a>, deux adolescents qui s’étaient réfugiés dans l’enceinte d'un poste électrique pour échapper à un contrôle de police, et les émeutes qui s’ensuivent dans plusieurs banlieues françaises. Depuis, le nombre de chansons faisant référence à la police a tendance à diminuer sur le corpus de chansons sélectionné. En 2018, il n’est plus que de 21,08%.
+          </p>
+        </div>
+        <div id="graphe-fallref" class="col-10">
+            <h2 class="ca-heading-sub title">Le pourcentage de chansons faisant référence à la police baisse progressivement depuis 2006</h2>
+            <div class="text-muted subtitlegraph">Méthodologie : une chanson est comptabilisée si elle contient au moins un des mots de la base indiquée précédemment, les mots au pluriel étant rattachés à leur racine au singulier sauf "perdreaux" et "poulets". Les métaphores ne sont donc pas prises en compte. </div>				
+            <div id="container"></div>
+        </div>
+        <div class="lead col-10 text-muted">
+          <p>Si l’évocation de la police est moins fréquente, cela ne veut pas dire que les rappeurs ne s’y intéressent pas ou plus. <i>« Ils s’expriment différemment, moins dans les textes mais de manière plus percutante, sur une phrase d’un coup »</i>, explique Brice Bossavie, journaliste à l’<a href="http://www.abcdrduson.com/">Abcdr du son</a>. Il cite par exemple la chanson « Gris » de Vald, un morceau plutôt divertissant dans lequel une phrase fait explicitement référence à l’affaire Théo : <i>« Y’a plein d’trucs dans ton cul qui n’devrait pas y être comme matraque de CRS »</i>. L’affaire Théo, survenue en février 2017 à Aulnay-sous-Bois, c’est ce jeune homme de 22 ans interpellé par des policiers qui a été victime d’un viol allégué avec une matraque. </p>
+          <p>Une autre explication de cette baisse des références à la police et aux autorités serait la peur du bad buzz. <i>« La peur avec les réseaux sociaux, tout est repris, sorti de son contexte. Les rappeurs ne veulent pas parler de sujets politiques à cause de ça »</i>, souligne Brice Bossavie. Un constat partagé par Yérim Sar, journaliste spécialisé dans le rap. <i>« Il y a une raison évidente : les morceaux à thème où les rappeurs s’astreignent à un sujet sont moins présents”</i> et aussi <i>« depuis le début des années 2000, c’est un truc relou d’être le mec qui revendique »</i>. Selon lui, il y a désormais une plus grande variété dans le rap.</p>
+          <p>Les références à la police chutent aussi en raison de l’évolution des postures adoptées par les rappeurs. Ceux <i>« qui auraient tendance à détester la police ont de plus en plus tendance à se projeter dans des figures fantasmées si fortes ou si riches qu’elles n’auraient plus à craindre la police »</i>, précise Yérim Sar, journaliste musical. Incarner un <i>« héros »</i> du grand banditisme devient alors une manière d’amplifier l’<i>« ego trip »</i>, c’est-à-dire la tendance des rappeurs à s’autocélébrer dans leurs textes.  Ainsi Kaaris et Lacrim se comparent-t-ils au célèbre mafieux mexicain Joaquín Archivaldo Guzmán Loera dit <i>« El Chapo »</i>, invitant les auditeurs à « dire bonjour » à leur alter ego criminel.</p>
+          <p>L’incontournable <i>« duc de Boulogne »</i>, Booba, se met quant à lui en scène entrant et sortant de prison entre deux deals sombres, dans le clip du titre <i>« Scarface »</i>. Jouant sur les références au film qui a immortalisé Tony Montana, Booba raconte la difficulté de conjuguer ses activités illégales avec une vie amoureuse saine et sincère. Le tout sans jamais mentionner la police, pourtant.</p>
+          <p>A noter : ces changements ne sont pas sans lien avec le public lui-même. <i>« Depuis 2010, le rap s’est ouvert à d’autres catégories sociales »</i>, plus éloignées des problématiques policières et judiciaires, détaille Brice Bossavie, il cite les rappeurs Orelsan, 1995, Lomepal ou encore Big Flo et Oli.</p>
+        </div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/FmUDe7P0fzg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="lead col-10 text-muted">
+          <p><i>« J’ai l’impression que de plus en plus le message se dilue, on cherche peut-être à être moins direct qu’à une certaine époque, on va peut-être chercher à jouer avec les mots »</i>, explique Sylvain Lemay, titulaire d’un <span href="https://archipel.uqam.ca/8683/1/M14305.pdf">mémoire sur le rap</span>. Il a analysé les messages dans le rap francophone du Québec de 1990 à 2012. </p>
+          <p>Cette évolution transparaît aussi au travers des termes utilisés par les rappeurs et repérés par notre algorithme (voir méthodologie expliquée dans le graphique précédent). <b>A noter : si une référence à la police est répétée à plusieurs reprises dans une chanson, elle ne compte qu’une seule fois.</b> Nous avons pu constater qu’en 1997, les mots employés par les artistes pour qualifier la police étaient ainsi bien moins diversifiés qu’aujourd’hui : <i>« flic »</i> représentait alors près de 40% des références à la police, le reste se répartissant entre quelques autres termes comme <i>« police »</i>, <i>« keuf »</i> ou encore <i>« popo »</i>.
+          </p>
+          <p>Désormais, de plus en plus de mots différents viennent qualifier la police. Il peut s’agir par exemple d’abréviations (BRI pour Brigades de recherche et d'intervention, BAC pour  les Brigades anti-criminalité créées en 1994…) se référant à des unités particulières de la police, ou alors des mots évoquant implicitement la police comme <i>« képi »</i>. 
+          </p>
+          <!-- <a href="grp1.html">link text</a> -->
+        </div>
+    </div>
+  
+    <div class="row justify-content-md-center ">
+      <div class="jumbotron words col-lg-10 col-sm-10" id="graphwords">
+          <h1 class="lead text-muted jumbotron-subheading">Quels ont été les mots les plus utilisés chaque année ?</h1>
+          <select class="" name="selectyear" id="selectyear">
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018" selected>2018</option>
+        </select>
+          <div id="container2">
+          </div>
+      </div>
+    </div>    
+</section>
+
+<section class="container" id="end">
+  <div class="row justify-content-md-center textintro">
+    <div class="lead col-10 text-muted ">
+      <p>Mais attention, pour le journaliste spécialisé Brice Bossavie, ces évolutions - baisse du nombre de références à la police dans les chansons et diversification des termes employés - ne signifient pas pour autant que les rappeurs ne sont plus impliqués dans la dénonciation de la police et des violences policières. <i>« Ils restent engagés d’autres manières, notamment dans le domaine caritatif »</i>. </p>
+      <p>C’est le cas du rappeur Sofiane, connu pour donner des concerts caritatifs. Le 20 juin 2017, il réunissait ainsi <a href="http://www.clique.tv/sofiane-algerie/">25 000 personnes au profit de l’association du Croissant Rouge algérien</a>. Le rappeur Niska s’est quant à lui plusieurs fois déplacé en prison pour des <a href="http://generations.fr/news/musique/46193/niska-en-concert-en-prison">concerts destinés aux détenus</a>. D’autres artistes se sont quant à eux mobilisé en 2017 pour rendre hommage à Adama Traoré, jeune homme de 24 ans mort l’année précédente suite à son interpellation à Beaumont-sur-Oise.</p>
+    </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xakG-OuK9ik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="lead col-10 text-muted">
+        <p>Textes : Marie Sasin, Léa Sanchez et Paloma Soria<br>
+        Infographies et développement web : Léa Sanchez<br>
+        Vidéo : Camille Camdessus<br>
+        Interviews et enquête data : Marie Sasin, Léa Sanchez, Camille Camdessus, Yingke Zhao, Paloma Soria<br>
+        Encadrement : Nicolas Enault
+      </p>
+      </div>
+  </div> 
+</section>
+<script type="text/javascript" src="static/js/search-basewords.js"></script>
+<script type="text/javascript" src="static/js/graph-highcharts.js"></script>
+<script type="text/javascript" src="static/js/accordeon.js"></script>
+<script type="text/javascript" src="static/js/words-cloud.js"></script>
+
+<script>
+  
+  </script>
+</body>
+</html>

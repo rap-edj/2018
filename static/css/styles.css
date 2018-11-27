@@ -1,0 +1,327 @@
+
+.active, .accordion:hover {
+  outline: none;
+}
+
+#end{
+  margin-bottom:70px !important;
+}
+
+header.masthead {
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+header.masthead .intro-text {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+header.masthead .intro-text .intro-lead-in {
+  font-size: 22px;
+  /* font-style: italic; */
+  line-height: 22px;
+  margin-bottom: 25px;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+header.masthead .intro-text .intro-heading {
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 50px;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@media (min-width: 768px) {
+  header.masthead .intro-text {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  header.masthead .intro-text .intro-lead-in {
+    font-size: 40px;
+    /* font-style: italic; */
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+  header.masthead .intro-text .intro-heading {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+}
+
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+
+.lead p, #panel p  {
+  font-size:15px;
+}
+
+#proces, iframe, #container {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+#panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+select{
+  opacity: 0.9;
+  margin:10px;
+  background: rgba(0,0,0,0);
+  color:#fff;
+  /* text-shadow:0 1px 0 rgba(0,0,0,0.4); */
+}
+
+
+
+.highcharts-plot-line-label {
+    font-family: "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
+  }
+  
+  .highcharts-tooltip {
+    z-index: 9998;
+  }
+  #exampleinbase {
+      margin-top: 20px;
+  }
+
+
+      #graphe-fallref, #graphe-topwords {
+      padding-top:10px;
+          width:100%;
+
+      }
+      #graphe-fallref, #graphe-topwords{
+          min-height:600px;
+      }
+      .titre{
+          position:relative;
+          margin: 10px;
+          position: relative;
+          }
+  /* .soustitre{
+          display:block;
+          margin: 15px;
+      color:black !important;
+  } */
+      .highcharts-tooltip span {
+          height: auto;
+          min-width: 170px;
+          z-index: 9998!important;
+          overflow: auto;
+          opacity: 1;
+          white-space: normal !important;
+      }
+      .highcharts-xaxis-labels text
+      {
+          font-size: 10px!important;
+  }
+      .highcharts-legend-item text
+      {
+          font-size: 11px!important;
+      }
+      .tooltiplarge {
+          width: 230px;
+      }
+    
+    @import url(http://fonts.googleapis.com/css?family=VT323);
+  
+  
+  .quote {
+    cursor: default;
+    color: #00331a;
+    margin: 0 auto 0;
+    -webkit-perspective: 1000vmin;
+            perspective: 1000vmin;
+    width: 100%
+  }
+  
+  .quote span {
+    border-radius: 0.3em;
+    display: inline-block;
+    padding: 0 0.25em;
+    margin: 0.1em 0.1em;
+    -webkit-transform: translateZ(-500vmin) rotateX(90deg);
+            transform: translateZ(-500vmin) rotateX(90deg);
+    -webkit-transition: background 2s ease-in, color 5s ease-out, text-shadow 0.5s ease-out, -webkit-transform 15s ease-in;
+            transition: background 2s ease-in, color 5s ease-out, text-shadow 0.5s ease-out, transform 15s ease-in;
+  }
+  
+  .quote .highlight, .quote span:hover {
+    background: rgba(0, 255, 128, 0.1);
+    color: #80ffc0;
+    text-shadow: 0 0 0.6em #00ff80;
+    -webkit-transform: translateZ(0) rotateX(0deg);
+            transform: translateZ(0) rotateX(0deg);
+    -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+    z-index: 9001;
+  }
+  header, .jumbotron, .divaccordion, #navbar {
+  
+    background-color: #222731  !important;
+    border: 10x solid #979797;
+    border-top: none;
+    border-radius: 0 !important;
+    overflow: visible;
+    text-align: center;
+  }
+  
+  .jumbotron-heading {
+  
+    font-family: MarrSans-Medium;
+      font-size: 24px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+  }
+  .title {
+  
+    font-family: MarrSans-Medium;
+      font-size: 24px;
+      color: #222731;
+      letter-spacing: 0;
+  }
+  .subtitlegraph{
+  
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+      /* font-size: 18px; */
+      color: #222731;
+      /* line-height: 110%; */
+  }
+  
+  .jumbotron-subheading {
+    opacity: 0.9;
+      font-family: TheAntiquaB-W5Plain;
+      font-size: 25px;
+      color: #f3f3f3!important;
+      letter-spacing: 0;
+      line-height: 2rem;
+
+  
+  }
+  
+  .words {
+
+    margin-top: 20px;
+    font-family: MarrSans-Medium;
+      font-size: 17px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      padding: 25px;
+  
+  }
+  .words p {
+ 
+    border-radius: 10px;
+  }
+  #intro .textintro, #fallref .textintro, #end .textintro {
+    justify-content: center;
+  }
+  
+  #intro .examples div {
+    width: 50%;
+    border:red;
+    color:red;
+  }
+  
+  iframe {
+    padding-bottom: 15px;
+  
+  }
+
+  .accordion {
+    padding: 20px;
+    width: 100%;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    transition: 0.4s;
+    background-color: none !important;
+    opacity:1 !important;
+    
+  }
+
+  .divaccordion  {
+    margin-bottom: 20px;
+    
+  }
+
+  #panel{
+    opacity: 0.9;
+    color:white;
+    font-size: 2vmin;
+    font-family: MarrSans-Medium;
+    
+  }
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  line-height: 1.75;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h2 .section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h3.section-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 75px;
+  text-transform: none;
+}
+
+#how, #about {
+  padding: 70px 0;
+}
+@media(min-width:768px) {
+  #how, #about  {
+    padding: 70px 0;
+  }
+}
+
+.btn {
+  font-weight: 700;
+}
+
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+  margin:20px;
+}
