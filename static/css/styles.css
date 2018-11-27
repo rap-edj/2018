@@ -332,8 +332,8 @@ h3.section-subheading {
   width:100%;
   background-image: url("../img/title.png");
   background-repeat:no-repeat;
-  /* background-attachment: fixed;
-  background-position: center; */
+  /* background-attachment: fixed; */
+  background-position: center;
 }
 
 .nav.nav-center {
