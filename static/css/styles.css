@@ -325,3 +325,7 @@ h3.section-subheading {
   padding: 20px 40px;
   margin:20px;
 }
+
+#jumbotron-img {
+  background-image: url("static/img/title.png");
+}
