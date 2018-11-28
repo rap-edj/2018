@@ -22,11 +22,6 @@
    height: 250px;
    padding: 3px;
 }
-.iframe {
-       float: center;
-       margin-left: 200px;   /* Automatic margin from left */
-       margin-right: auto; /* Automatic margin from right */
-      } 
 </style>
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="navbar">
           <ul class="navbar-nav">
@@ -43,15 +38,24 @@
         </nav>
 <header>
  <div class="background"></div>
- <h1 class="jumbotron-heading text-center">ENGAGEMENT ET MOQUERIE</h1>
+ <h1 class="jumbotron-heading text-center"><font color=#bb4243>ENGAGEMENT ET MOQUERIE</font></h1>
  <p class="lead jumbotron-subheading text-center"><strong>LA POLITIQUE DANS LE RAP</strong></p>
 </header>
 
+<script type="text/javascript">
+  function autoResize(id){
+    var height = document.getElementById(id).contentWindow.document.body.scrollHeight;
+    var width = document.getElementById(id).contentWindow.document.body.scrollWidth;
 
+    document.getElementById(id).height= (height) + "px";
+    document.getElementById(id).width= (width) + "px";
+  }
+</script>
 
 <section class="container" id="intro">
  <div class="row justify-content-md-center textintro">
      <div class="lead col-10 text-muted">
+       <br/>
        <p>Il y a plus de 20 ans, ce rappeur sortait « Première Consultation », l'un des albums les plus vendus du rap français. Avant de connaître une longue traversée du désert pour avoir apporté son soutien à Nicolas Sarkozy lors de la campagne présidentielle de 2007. Sa <i>« plus grande erreur »</i>, comme il l’avoue aujourd’hui. </p>
      </div>
  </div>
@@ -72,16 +76,12 @@
          <p>Ce constat a inspiré notre travail sur la politique dans les chansons de rap français. Un sujet qui nous a semblé intéressant, après avoir constaté que les hommes et femmes politiques étaient souvent cités dans les chansons.
          </p>
        </div>
-       <div>
-
-        <iframe class="iframe" src="https://datawrapper.dwcdn.net/B6JhL/4/" scrolling="no" frameborder="0" width="600" height="1530" align="middle"></iframe>
-         
-
-           <div class="text-muted subtitlegraph">Méthodologie : nous avons établi une liste des 100 personnalités les plus médiatiques. Pour chacune, nous avons regardé combien de chansons faisaient mention de leurs noms dans les paroles. Dans le cas de la famille Le Pen, comme les prénoms n'étaient pas forcément indiqués, nous n'avons gardé que le nom de famille. </div>     
-
-
-           
-       </div>
+       
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://datawrapper.dwcdn.net/B6JhL/7/" onLoad="autoResize('yourframe');"></iframe> 
+        </div>
+           <br/><em><font size="2"><font color= "#6c757d">Méthodologie : nous avons établi une liste des 100 personnalités les plus médiatiques. Pour chacune, nous avons regardé combien de chansons faisaient mention de leurs noms dans les paroles. Dans le cas de la famille Le Pen, comme les prénoms n'étaient pas forcément indiqués, nous n'avons gardé que le nom de famille.</font></font></em> </div>       
+    </div>
 
        <div class="lead col-10 text-muted">
 
@@ -94,21 +94,24 @@
 
          <p>Nous allons donc particulièrement nous intéresser aux thèmes et aux personnalités politiques qui reviennent dans les chansons de rap français, pour mieux comprendre les relations entre ce genre musical et la politique. Nous allons voir que l’année 2005 constitue un tournant, l’engagement politique laissant place à la moquerie.</p>
 
-        <div class="flourish-embed" data-src="visualisation/166836"></div><script src="https://public.flourish.studio/resources/embed.js"></script>
+          <div class="flourish-embed" data-src="visualisation/166836"></div><script src="https://public.flourish.studio/resources/embed.js"></script>
 
-         <h1><p>Le tournant 2005 : quand les artistes sont passés de l’engagement politique à la moquerie.</h1></p>
+        <em><font size="2"><font color= "#6c757d">Méthodologie : Une liste de 223 termes liés au champ lexical du politique a été définie. Cette liste a été croisée aux paroles de chansons. Les titres validés sont ceux dont le texte comporte au moins un terme de la liste. Un ratio rapporté au nombre total de chansons produites par année a ensuite été calculé. Pour des raisons de cohérence statistique, les années 1990 et 1996 ont été retirées (nombre de chansons non significatif).</font></font></em> </div>
 
+</section>
+<section class="container" id="fallref">
+       
+        <br/>
+          <h2>Le tournant 2005 : quand les artistes sont passés de l’engagement politique à la moquerie</h2>
+         </br>
+
+         <div class="lead col-10 text-muted">
 
          <p>Comme nous l’avons vu, de la fin des années 1990 jusqu’à l’aube du 21ème siècle, de nombreuses chansons de rap ont véhiculé des messages politiques ou été empreintes d’une allusion à une personnalité politique.</p>
 
 
          <p>Toutefois, comme le souligne Brice Bossavie, journaliste spécialisé dans le rap, <i>« il y a eu un tournant autour de l’année 2005 pour ce qui est de l’engagement des rappeurs et de leur intérêt même pour la politique »</i>.</p>
 
-
-       </div>
-
-       
-         <div class="lead col-10 text-muted">
 
          <p>A l’origine de ce désintérêt généralisé : une déception globale envers la classe politique mais aussi un sentiment que les idées véhiculées par les extrêmes sont de plus en plus populaires depuis le choc de 2002. De plus, les émeutes de 2005 donnent aux artistes l’impression que les banlieues sont négligées et délaissées par les acteurs publics. </p>
 
@@ -120,32 +123,29 @@
 
          <p>Autre matière des rappeurs, selon Brice Bossavie : les déboires des personnalités politiques et les affaires les impliquant, en particulier lorsqu’elles revêtent un aspect financier. <i>« Les affaires Cahuzac et DSK, par exemple, semblent faire rire la majorité des artistes dans le rap »</i> analyse-t-il. Avant de poursuivre : <i>« avec le temps, on assiste même à des retournements étonnants. Les personnalités n’intéressent plus vraiment pour ce qu’elles sont, ce qui amuse désormais les chanteurs c’est si elles ont un culte de l’argent. Il suffit de regarder l’évolution de l’image de Nicolas Sarkozy : alors qu’il était détesté au début des années 2000, il est désormais cité par de nombreux rappeurs comme une référence pour ses qualités de businessman. »</i> 
          </p>
-       </div>
-   </div>
-</section>
+  
 
-<section class="container" id="end">
- <div class="row justify-content-md-center textintro">
-   <div class="lead col-10 text-muted ">
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GgCYHmkWzIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-
-    
+         <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/GgCYHmkWzIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+         </div>
      <p><i>« Il suffit de regarder les paroles de la chanson Marion Machéral du rappeur Sofiane, sortie en 2017 »</i> détaille Brice Bossavie. <i>« Le titre fait directement référence à la députée et reprend son nom à maintes reprises dans le corps de la chanson. Pourtant, il n’est pas question du projet politique ou des idées de Marion Maréchal Le Pen. Cela semble juste amuser le rappeur de citer son nom et de faire croire qu’il est en couple avec elle. »</i> </p>
 
       <img src="static/img/capture.png" height="900" width="600">
-     <br>
+     <br/><br/>
 <p>Même canular de la déclaration de flamme avec la chanson « Rama Yade » signée Don Choa et sortie en 2010. Dans ce morceau aux rythmes RnB et reggae, l'un des quatre MCs du groupe de rap marseillais Fonky Family parle de l’ancienne membre du gouvernement de François Fillon en termes élogieux (et ironiques).</p>
-    <h2><p>Paroles de « Rama Yade », par Don Choa</p></h2>
-    <img src="static/img/capture2.png" height="900" width="600">
-     <p>L’amusement des frasques, pour sa part, est notamment visible à travers la chanson « Patrick », signée Grands Corps Malade. Sur ce titre, le rappeur fait un hommage plus que ironique au maire de Levallois-Perret, Patrick Balkany. Parmi les phrases faisant référence aux poursuites judiciaires du maire, on peut notamment relever celle-ci : <i>« T’as sur le dos et sur les bras, plus de mises en examen que ton ami Nicolas. »</i></p>
+    <img src="static/img/capture2.png" height="900" width="600"><br/><br/>
+     <p>L’amusement des frasques, pour sa part, est notamment visible à travers la chanson « Patrick », signée Grands Corps Malade. Sur ce titre, le rappeur fait un hommage plus que ironique au maire de Levallois-Perret, Patrick Balkany. Parmi les phrases faisant référence aux poursuites judiciaires du maire, on peut notamment relever celle-ci : <i>« T’as sur le dos et sur les bras, plus de mises en examen que ton ami Nicolas. »</i></p><br/>
+        </div>
 
+</section>
 
-      <h1><p>L’après 2005 et le désintéressement croissant pour la politique nationale au profit de sujets internationaux et post-coloniaux</h1></p>
+<section class="container" id="fallref">
 
-<h2><p>-Une référence incontournable : Barack Obama</p></h2>
+      <h2>L’après 2005 et le désintéressement croissant pour la politique nationale au profit de sujets internationaux et post-coloniaux</h2><br/>
 
+<h4>Une référence incontournable : Barack Obama</h4><br/>
 
+<div class="lead col-10 text-muted">
 <p>Après 2005, on constate un désintéressement croissant des rappeurs français pour la politique nationale au profit de sujets internationaux et post-coloniaux. Les artistes français portent un vif intérêt en la personne de Barack Obama, qui se fait connaître dès 2008 dans sa course vers la Maison-Blanche. Ce dernier devient une référence incontournable dans les chansons des artistes de hip-hop français, qui n’hésitent pas à citer son nom comme élément de comparaison pour évoquer divers sujets comme le racisme, la politique internationale et les sujets liés à l’Afrique.</p>
 
 
@@ -154,13 +154,13 @@
 <p>Des artistes dénoncent ainsi le manque de respect envers les personnes noires investies dans la vie politique française, bien qu’il existe un président « noir » aux USA : <i>« Loin des Etats-Unis qui votent massivement pour Obama / Je vis la France où l’on agite une Taubira ou Rama »</i>, et plus loin, <i>« Ici, pas de Malcom, de Martin Luther ou d’Mandela / C’est Arnault, Pinault, Lagardère »</i>, chantait ainsi le rappeur JP Manova en 2015 dans son titre, « Is everything right ». Avant, Youssoupha rappait aussi en 2012, dans « Gestelude Pt 2 » : <i>« Qu’Obama me délivre, la France c’est pas l’Amérique / Et ça reste un exploit de voir un Noir, même à la mairie »</i>.</p>
 
 
-
 <p>Si Barack Obama est le président le plus cité de l’histoire de la musique américaine — avec 309 mentions selon le magazine Billboard — il est également évoqué de nombreuses fois dans le hip-hop français, près de 100 fois d’après les recherches que nous avons effectué, sa popularité auprès des rappeurs — français aussi bien qu’américains — reste à nuancer.</p>
 
-<img src="static/img/obama.png" height="400" width="800">
+<img src="static/img/obama.png" height="400" width="800" class="img-fluid">
 
- <div class="text-muted subtitlegraph">Méthodologie : Nuage de mots des 84 chansons qui citent Barack Obama. Seuls les paragraphes où il est question de l’ex-président américain ont été analysés, pour voir les notions qui lui sont associées.</div>
-<br>
+<div><br/><em><font size="2"><font color= "#6c757d">Méthodologie : Nuage de mots des 84 chansons qui citent Barack Obama. Seuls les paragraphes où il est question de l’ex-président américain ont été analysés, pour voir les notions qui lui sont associées.</em></font></font></div>
+
+<br/>
 
 <p>En effet, si beaucoup lui reconnaissent un statut particulier auprès de la communauté afro-américaine, de nombreux artistes dresseront par la suite un portrait moins glorieux de l’ancien président américain. Aux Etats-Unis, dans son morceau « Let Me Know » sorti en 2016, The Game lui a reproché son silence vis-à-vis des violences policières, notamment après la mort de Philando Castile, un afro-américain de 32 ans. <i>« Pourquoi il faut trois jours à Obama pour répondre ? Parce que le Minnesota est à trois jours de la pelouse de la Maison-Blanche »</i>, rappait-il.</p>
 
@@ -168,8 +168,16 @@
 
 <p>Dans un article du Monde publié en 2012, Brother Ali, rappeur américain indépendant, donne une explication de cette perte de popularité d’Obama : <i>« Il n’a pas été capable de mener à bien les réformes que nous voulions voir accomplies. Cela montre deux choses : soit le système est tellement corrompu que même le meilleur des politiques n’y peut rien, soit Obama a perdu le courage et la force de se battre. En tout cas, il a été incapable de faire bouger les choses. »</i></p>
 
-<h2><p>Le conflit israélo-palestinien</p></h2>
+</div>
 
+</section>
+
+
+<section class="container" id="fallref">
+
+<h4>Le conflit israélo-palestinien</h4>
+
+<div class="lead col-10 text-muted">
 
 <p>Le conflit israélo-palestinien est un sujet sensible, brûlant même, qui occupe le débat public français, depuis le début des années 1950. Le rap, qui entend s’inscrire dans la société et plus largement au coeur du social, s’en est logiquement emparé.</p>
 
@@ -188,10 +196,9 @@ Pour Kohndo, <i>« les rappeurs et les quartiers sont tellement liés qu’ils p
 <p>Pour lui, <i>« tout est lié à l’émotion »</i>, <i>« très palpable en France de façon générale »</i>. Les sondages en attestent tout au long de la dernière décennie. Dans la dernière étude publiée en juin 2018, par IFOP, seules 43% des personnes interrogées disent avoir une « bonne image » d’Israël. Signe de l’époque, le rap reflète bien cet état d’esprit ordinaire. Et comme le rappelle Médine, <i>« ça reste une musique, c’est donc forcément en lien avec l’affect »</i>.</p>
 <br>
 
-   </div>
-
+</div>
      
-     <div class="lead col-10 text-muted">
+<div>
        <p>Textes et enquête data : Anouk Helft, Lina Kortobi, David Pauget, Clara Tran, Aliénor Vinçotte<br>
        Crédit photo : album Ecoute la rue Marianne (2007)<br>
        Encadrement : Nicolas Enault
